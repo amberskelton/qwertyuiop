@@ -1,0 +1,368 @@
+#wrapper{
+    display:grid;
+    grid-template-areas:
+        "nested"
+        "nestedgrid"
+        "paragraph"
+        "footer";
+}
+
+#header{
+    grid-area: header;
+    line-height:70px;
+    background-color:white;
+    padding-left:8px;
+    font-size: 30px;
+}
+#logo{
+    grid-area: logo;
+    line-height:10px;
+    background-color:white;
+    align-content: center;
+    text-align:center;
+}
+#gridwrapper{
+    padding:5px;
+    background-color:#BFCBE0;
+}
+
+#footer{
+    grid-area: footer;
+    background-color:#BFCBE0;
+    padding:25px;
+}
+#paragraph{
+    grid-area:paragraph;
+}
+
+#nested{
+    grid-area: nested;
+    display:grid;
+    grid-template-areas: "logo header homepage";
+    grid-template-columns: 1fr 3fr 1fr;
+    background-color:#BFCBE0;
+    padding:5px;
+}
+#nestedgrid{
+    grid-area: nestedgrid;
+    display:grid;
+    grid-template-areas: "aboutme culture contact";
+    text-align: center;
+    padding-bottom:10px;
+    padding-top:5px;
+    padding-left:5px;
+    padding-right:5px;
+    background-color:#BFCBE0;
+}
+#nestedgrid2{
+    grid-area: nestedgrid2;
+    display:grid;
+    grid-template-areas:"text1 text2 imagebox0 imagebox1 imagebox2 imagebox3";
+    padding:10px;
+    background-color:#BFCBE0;
+    
+}
+#nestedgrid3{
+    grid-area: nestedgrid3;
+    display:grid;
+    grid-template-areas:"box1 box2"
+        "box3 box4";
+        padding:10px;
+    background-color:#BFCBE0;
+    
+}
+#nestedgrid4{
+    grid-area: nestedgrid4;
+    display:grid;
+    grid-template-areas:"pepeha flag other"; 
+    padding:10px;
+    background-color:#BFCBE0;
+}
+#contactlist{
+    grid-area: contactlist;
+    display:grid;
+    grid-template-areas:"contact1 contact2 contact3";
+    padding:10px;
+    background-color:#BFCBE0;
+}
+
+#contact1{
+    background-color:white;
+    text-align:center;
+    padding-bottom:340px;
+}
+#contact2{
+    background-color:white;
+    text-align:center;
+}
+#contact3{
+    background-color:white;
+    text-align:center;
+}
+
+#pepeha{
+    grid-area:pepeha;
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:1;
+    grid-row-end:3;
+    background-color:white;
+    text-align:center;
+}
+#flag{
+    grid-area:flag;
+    grid-column-start:2;
+    grid-column-end:4;
+    grid-row-start:1;
+    grid-row-end:2;
+    background-color:white;
+    text-align:center;
+    align-content: center;
+    padding:10px;
+}
+#other{
+    grid-area:other;
+    grid-column-start:2;
+        grid-column-end:4;
+        grid-row-start:2;
+        grid-row-end:3;
+     background-color:white;
+    padding:10px;
+    font-size: 20px;
+}
+
+#box1{
+    grid-area:box1;
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:1;
+    grid-row-end:2;
+    background-color:white;
+    padding:10px;
+    font-size:20px;
+}
+#box2{
+    grid-area:box2;
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:1;
+    grid-row-end:2;
+    background-color:white;
+    padding:10px;
+}
+#box3{
+    grid-area:box3;
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:2;
+    grid-row-end:3;
+    background-color:white;
+    padding:10px;
+}
+#box4{
+    grid-area:box4;
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:2;
+    grid-row-end:3;
+    background-color:white;
+    padding:10px;
+    font-size:20px;
+}
+
+#text1{
+    grid-area:text1;
+    grid-column-start:1;
+    grid-column-end:3;
+    grid-row-start:1;
+    grid-row-end:2;
+    background-color:white;
+    padding:10px;
+    font-size:20px;
+}
+#text2{
+    grid-area:text2;
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:2;
+    grid-row-end:4;
+    background-color:white;
+    padding:10px;
+    font-size:20px;
+}
+#imagebox0{
+    grid-area:imagebox0;
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:2;
+    grid-row-end:4;
+    background-color:white;
+    padding:10px
+}
+#imagebox1{
+    grid-area:imagebox1;
+    grid-column-start:3;
+    grid-column-end:5;
+    grid-row-start:1;
+    grid-row-end:2;
+    background-color:white;
+}
+#imagebox2{
+    grid-area:imagebox2;
+    grid-column-start:5;
+    grid-column-end:7;
+    grid-row-start:1;
+    grid-row-end:2;
+    background-color:white;
+}
+#imagebox3{
+    grid-area:imagebox3;
+    grid-column-start:3;
+    grid-column-end:7;
+    grid-row-start:2;
+    grid-row-end:4;
+    background-color:white;
+}
+
+#homepage{
+    grid-area: homepage;
+    line-height:70px;
+     text-align: center;
+    background-color:white;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+    transition-duration: 0.4s;
+    text-decoration:none;
+    font-size:20px;
+}
+#homepage:hover{
+    background-color: #7F96C0;
+  color: white;
+}
+#aboutme{
+    grid-area: aboutme;
+    background-color:white;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+    transition-duration: 0.4s;
+    padding:10px;
+    font-size:20px;
+}
+#aboutme:hover{
+    background-color: #7F96C0;
+  color: white;
+}
+#culture{
+    grid-area: culture;
+    background-color:white;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+    transition-duration: 0.4s;
+    padding:10px;
+    font-size:20px;
+}
+#culture:hover{
+    background-color: #7F96C0;
+  color: white;
+}
+#contact{
+    grid-area:contact;
+    background-color:white;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+    transition-duration: 0.4s;
+    padding:10px;
+    font-size:20px;
+} 
+#contact:hover{
+    background-color: #7F96C0;
+  color: white;
+}
+
+#bdsclogo{
+    padding:5px;
+    text-align:center;
+}
+#outlook{
+    text-align:center;
+    padding:10px;
+}
+#instagram{
+    text-align:center;
+    padding:10px;
+}
+#discord{
+    text-align:center;
+    padding:10px;
+}
+
+.img{
+padding:10px;
+    text-align:center;
+}
+.img2{
+    padding:10px;
+    text-align:center;
+}
+#imgculture2{
+    text-align:center;
+
+}
+#spaceimg{
+    align-content: center;
+    text-align:center;
+    padding:10px;
+}
+#photoimg{
+    text-align:center;
+    align-content: center;
+    padding:10px;
+    display:flex;
+}
+#mbtiimg{
+    text-align:center;
+    align-content: center;
+    padding:10px;
+    display:flex;
+}
+#rockimg{
+    align-content: center;
+    text-align:center;
+    padding:10px;
+}
+
+#mbti{
+    text-align:center;
+    
+}
+#hobby{
+    text-align:center;
+}
+#interest{
+    text-align:center;
+}
+#interest2{
+    text-align:center;
+}
+
+
+a{
+    text-decoration:none;
+}
+body {
+  font-family: "Questrial", sans-serif;
+}
+html{
+    background-color:#7F96C0;
+}
+div{
+    grid-gap:10px;
+}
